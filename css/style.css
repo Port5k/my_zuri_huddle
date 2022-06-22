@@ -81,7 +81,7 @@ button {
     border-radius: 40px;
     background-color: #fe52c0;
     color: #fff;
-    animation: animateBtn 1s infinite ease-in-out;
+    animation: animateBtn 3s infinite ease-in-out;
 }
 
 @keyframes animateBtn {
@@ -182,7 +182,6 @@ button {
 }
 
 .footer img {
-    background-color: #00252e;
     padding: 2rem 0;
 }
 
@@ -233,13 +232,24 @@ button {
     text-decoration: underline;
 }
 
-.company_info .socials a:active {
+.company_info .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company_info .socials a {
     padding: 1rem;
 }
 
 .company_info .socials a:active {
-    border: 1px #fff solid;
+    border: 1px #fe52c0 solid;
     border-radius: 50%;
+}
+
+.company_info .socials img {
+    filter: invert(100%);
+    max-width: 42px;
 }
 
 .footer>p {
